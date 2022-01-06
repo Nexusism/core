@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MemberServiceImpl implements MemberService {
 
-    private final MemberRepository memberRepository;
+    private final MemberRepository memberRepository;  // private final이면 반드시 memberRepository를 생성자로 세팅해서 값이 있어야함.
 
     @Autowired
     public MemberServiceImpl(MemberRepository memberRepository) {
